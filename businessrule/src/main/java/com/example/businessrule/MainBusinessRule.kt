@@ -28,7 +28,7 @@ class MainBusinessRule(val context: Context):Application(),ItemFromUI  {
         if (name != "" && description != "" && price != "" && quantity != 0 && categoryItem != "") {
             insertItemDataBase(name, description, price, quantity, categoryItem)
         } else {
-            Toast.makeText(context, "Error not possible insert item", Toast.LENGTH_LONG)
+            Toast.makeText(context, "Error not possible insert item", Toast.LENGTH_LONG).show()
         }
 
     }

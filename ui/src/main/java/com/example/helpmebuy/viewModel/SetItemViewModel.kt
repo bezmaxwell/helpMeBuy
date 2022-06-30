@@ -1,15 +1,12 @@
 package com.example.helpmebuy.viewModel
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.businessrule.MainBusinessRule
 import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
-class SetItemViewModel(): ViewModel(),CoroutineScope {
+class SetItemViewModel: ViewModel(),CoroutineScope {
 
     init {
         validatePrice()
